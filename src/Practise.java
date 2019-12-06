@@ -1,18 +1,22 @@
 public class Practise {
 
     public static void main(String[] args){
-        System.out.println(isLeapYear(5));
+        System.out.println(area(5));
     }
 
-    public static boolean isLeapYear(int year){
-        if(year < 1 || year > 9999){
-            return false;
-        } else if(year >= 1 || year <= 9999){
-            return true;
-        } else if(year % 4 == 0 && year % 100 == 0 && year % 400 != 0) {
-            return true;
+    public static double area(double radius){
+        if(radius < 0){
+            return -1.0;
         } else {
-            return false;
+            return radius * radius * Math.PI;
+        }
+    }
+
+    public static double area(double x, double y){
+        if((x < 0) || (y < 0)){
+            return -1.0;
+        } else {
+            return x * y;
         }
     }
 }
