@@ -7,7 +7,6 @@ public class VowelCount {
                 vowelsCount ++;
             }
         }
-        //testing for git
         return vowelsCount;
     }
 }
